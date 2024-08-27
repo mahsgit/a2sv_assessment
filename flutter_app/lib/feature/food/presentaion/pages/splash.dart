@@ -16,7 +16,7 @@ class _SplashState extends State<Splash> {
   }
 
   void _navigateToNextScreen() async {
-    await Future.delayed(Duration(seconds: 10));
+    await Future.delayed(Duration(seconds: 2));
     Navigator.pushReplacementNamed(context, '/');
   }
 
@@ -32,7 +32,7 @@ class _SplashState extends State<Splash> {
             ),
           ),
           Positioned(
-            bottom: 10, 
+            bottom: 10,
             left: 20,
             right: 20,
             child: Column(
@@ -43,11 +43,11 @@ class _SplashState extends State<Splash> {
                   style: GoogleFonts.caveatBrush(
                     textStyle: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 30,
                     ),
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 5),
                 Text(
                   " SPEEDY CHOW",
                   style: GoogleFonts.caveatBrush(
